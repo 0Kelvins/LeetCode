@@ -1,6 +1,8 @@
 ## 383. Ransom Note
 [link](https://leetcode.com/problems/ransom-note/description/)
+
 *easy*
+
 > magazine为字母库，ransomNote为目标串，使用字母库字母构建目标串，每个字母只能用一次
 > 求字母库是否能构建目标串
 
