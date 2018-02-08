@@ -16,7 +16,7 @@ A C E G
 B D F ...
 ```
 
-字母位置间关系如下：
+字母位置间关系如下，参考[If you are confused with zigzag pattern,come and see! —— HelloKenLee的回答](https://discuss.leetcode.com/topic/22925/if-you-are-confused-with-zigzag-pattern-come-and-see)：
 ```
 // n = numRows
 
