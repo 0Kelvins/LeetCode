@@ -2,7 +2,7 @@ import java.util.*;
 
 /**
  * 632. Smallest Range
- * Hard
+ * So Hard -_-b
  * 求多个整数数组列表中，每个数组取至少一个值，组成的最小数值范围
 */
 class Solution {
