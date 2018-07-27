@@ -1,5 +1,5 @@
 class Solution {
-    // ¿É±ÜÃâ´¦ÀíÆæÅ¼»ØÎÄ´®Çø±ğ
+    // å¯é¿å…å¤„ç†å¥‡å¶å›æ–‡ä¸²åŒºåˆ«
     public static String preProcess(String s) {
         String r = "^";
         for (int i = 0; i < s.length(); i++) {
@@ -10,11 +10,11 @@ class Solution {
     }
 
     public static String longestPalindrome(String s) {
-        String t = preProcess(s);   // Ô¤´¦Àí×Ö·û´®£¬Èç"^#a#b#a#$"
+        String t = preProcess(s);   // é¢„å¤„ç†å­—ç¬¦ä¸²ï¼Œå¦‚"^#a#b#a#$"
         int n = t.length();
-        int[] P = new int[n]; // ´¦Àíºó×Ö·û´®¶ÔÓ¦Ã¿¸ö×Ö·ûÎªÖĞĞÄµÄ×î³¤»ØÎÄ´®°ë¾¶£¨Ô­»ØÎÄ´®µÄ³¤¶È£©
+        int[] P = new int[n]; // å¤„ç†åå­—ç¬¦ä¸²å¯¹åº”æ¯ä¸ªå­—ç¬¦ä¸ºä¸­å¿ƒçš„æœ€é•¿å›æ–‡ä¸²åŠå¾„ï¼ˆåŸå›æ–‡ä¸²çš„é•¿åº¦ï¼‰
         int center = 0, i_mirror = 0, right = 0;
-        // µ±Ç°iËùÔÚ»ØÎÄ´®µÄÖĞĞÄ£¬iµÄ¹ØÓÚcenterµÄ¾µÏñÏÂ±ê£¬Ç°Ò»¸ö»ØÎÄ´®µÄÓÒ±ß½çÏÂ±ê
+        // å½“å‰iæ‰€åœ¨å›æ–‡ä¸²çš„ä¸­å¿ƒï¼Œiçš„å…³äºcenterçš„é•œåƒä¸‹æ ‡ï¼Œå‰ä¸€ä¸ªå›æ–‡ä¸²çš„å³è¾¹ç•Œä¸‹æ ‡
 
         for (int i = 1; i < n - 1; i++) {
             i_mirror = 2*center - i;
