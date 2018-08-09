@@ -29,7 +29,7 @@ class InfixExperssion {
                 break;
             }
             else if (getOperPriority(cur) == 3 && getOperPriority(soper.peek()) < 3) {
-                break;
+                break;	// */只运行栈顶*/运算
             }
             char oper = soper.pop();
             int b = snum.pop();
