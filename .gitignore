@@ -1,4 +1,4 @@
 .git
 .vscode
 *.class
-LeetCode.code-workspace
+*.code-workspace
