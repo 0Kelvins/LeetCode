@@ -95,4 +95,6 @@ int main()
         {'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
 
     cout << (s.isValidSudoku(board2) ? "true" : "false") << endl;
+
+    return 1;
 }
