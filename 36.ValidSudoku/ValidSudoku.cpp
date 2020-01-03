@@ -96,5 +96,5 @@ int main()
 
     cout << (s.isValidSudoku(board2) ? "true" : "false") << endl;
 
-    return 1;
+    return 0;
 }

@@ -64,5 +64,5 @@ int main()
     cout << s.trap(h) << endl;
     vector<int> h2 = {5, 4, 1, 2};
     cout << s.trap(h2) << endl;
-    return 1;
+    return 0;
 }

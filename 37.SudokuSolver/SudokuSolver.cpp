@@ -77,5 +77,5 @@ int main()
         cout << endl;
     }
 
-    return 1;
+    return 0;
 }

@@ -39,5 +39,5 @@ int main()
     cout << s.firstMissingPositive(nums2) << endl;
     cout << s.firstMissingPositive(nums3) << endl;
 
-    return 1;
+    return 0;
 }

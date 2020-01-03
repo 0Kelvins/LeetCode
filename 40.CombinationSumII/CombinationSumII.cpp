@@ -63,5 +63,5 @@ int main()
 
     printResult(s.combinationSum2(candidates2, target2));
 
-    return 1;
+    return 0;
 }
