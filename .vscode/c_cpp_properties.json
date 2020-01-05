@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "MinGW",
+            "name": "Mingw",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
