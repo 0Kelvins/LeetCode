@@ -8,7 +8,7 @@ using namespace std;
 class Solution
 {
 public:
-    void arrange(vector<vector<int>> &r, vector<int> &nums, int n, int k)
+    void dfs(vector<vector<int>> &r, vector<int> nums, int n, int k) // 形参nums
     {
         if (k == n) // 递归最深层时存储结果
             r.push_back(nums);
@@ -16,9 +16,9 @@ public:
         {
             if (i > k) // i == k 时不换
                 swap(nums[k], nums[i]);
-            arrange(r, nums, n, k + 1);
-            if (i > k)
-                swap(nums[k], nums[i]); // 复位
+            dfs(r, nums, n, k + 1);
+            // if (i > k) // 利用形参nums不改变原始值，省去换回
+            //     swap(nums[k], nums[i]); // 实参要换回
         }
     }
 
@@ -26,7 +26,7 @@ public:
     {
         vector<vector<int>> r;
         int n = nums.size() - 1;
-        arrange(r, nums, n, 0);
+        dfs(r, nums, n, 0);
         return r;
     }
 };
