@@ -10,6 +10,7 @@
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
+            "MIMode": "gdb",
             "externalConsole": false,
             "setupCommands": [
                 {
