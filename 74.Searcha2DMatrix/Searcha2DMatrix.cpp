@@ -1,5 +1,6 @@
 /**
  * 74. Search a 2D Matrix
+ * 先对列首进行二分查找，再查找对应行会更快一点，但是复杂度量级一样
  */
 #include <iostream>
 #include <vector>
@@ -19,7 +20,7 @@ public:
         int low = 0, high = n * m - 1;
         while (low < high) // 注意循环条件
         {
-            int mid = (low + high + 1) / 2;
+            int mid = (low + high + 1) / 2; // 向上取整
             if (target < matrix[mid / m][mid % m])
                 high = mid - 1;
             else
