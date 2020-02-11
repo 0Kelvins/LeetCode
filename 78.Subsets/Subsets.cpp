@@ -1,5 +1,6 @@
 /**
  * 78. Subsets
+ * 还可以利用二进制数来做
  */
 #include <iostream>
 #include <vector>
