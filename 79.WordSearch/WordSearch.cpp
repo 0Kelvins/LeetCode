@@ -55,7 +55,7 @@ int main()
                                   {'S', 'F', 'C', 'S'},
                                   {'A', 'D', 'E', 'E'}};
     string words[] = {"ABCCED", "SEE", "ABCB"};
-    for (int i = 0; i < 1; i++)
+    for (int i = 0; i < 3; i++)
         cout << s.exist(board, words[i]) << endl;
     return 0;
 }
