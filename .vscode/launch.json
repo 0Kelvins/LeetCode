@@ -5,6 +5,13 @@
             "type": "java",
             "name": "Debug (Launch) - Java",
             "request": "launch",
+            "cwd": "${fileDirname}",
+            "sourcePaths": [
+                "${fileDirname}"
+            ],
+            "classPaths": [
+                "${fileDirname}"
+            ],
             "mainClass": "${file}"
         },
         {
