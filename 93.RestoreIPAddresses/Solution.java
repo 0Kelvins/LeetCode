@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  * 93. Restore IP Addresses
- * 写完再仔细看才明白自己用的DFS。还需要多练
+ * 写完再仔细看才明白自己用的BFS。还需要多练
  * BFS的效率好像还不如暴力呢，也不够简洁。
  */
 class Solution {
