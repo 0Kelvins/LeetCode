@@ -1,0 +1,4 @@
+aabcc dbbca aadbbcbcac
+aabcc dbbca aadbbbaccc
+a  a
+aacaac aacaaeaac aacaaeaaeaacaac
