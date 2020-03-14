@@ -33,7 +33,7 @@ class Solution {
         return result;
     }
 
-    public TreeNode levelTraversalCreat(String[] nums) {
+    public TreeNode levelTraversalCreate(String[] nums) {
         if (null == nums || "null".equals(nums[0]))
             return null;
         Integer t = Integer.parseInt(nums[0]);
@@ -62,7 +62,7 @@ class Solution {
         while (scan.hasNext()) {
             String t = scan.nextLine();
             String[] nums = t.split(" ");
-            TreeNode root = s.levelTraversalCreat(nums);
+            TreeNode root = s.levelTraversalCreate(nums);
             List<Integer> result = s.inorderTraversal(root);
             result.forEach((r) -> System.out.print(r + " "));
             System.out.println();
