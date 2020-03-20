@@ -46,6 +46,8 @@ class Solution {
     }
 
     public TreeNode createTree(String[] nums) {
+        if (nums == null)
+            return null;
         List<TreeNode> nodes = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
             TreeNode t = null;
@@ -53,10 +55,13 @@ class Solution {
                 t = new TreeNode(Integer.parseInt(nums[i]));
             nodes.add(t);
             if (i != 0) {
+                TreeNode parent = nodes.get((i - 1) / 2);
+                if (parent == null)
+                    continue;
                 if (i % 2 == 0)
-                    nodes.get((i - 1) / 2).right = t;
+                    parent.right = t;
                 else
-                    nodes.get((i - 1) / 2).left = t;
+                    parent.left = t;
             }
         }
         return nodes.get(0);
