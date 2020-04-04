@@ -9,12 +9,7 @@
             "sourcePaths": [
                 "${fileDirname}"
             ],
-            "classPaths": [
-                "${env:CLASSPATH}",
-                "${fileDirname}"
-            ],
-            "mainClass": "${file}",
-            "preLaunchTask": "Java build"
+            "mainClass": "${file}"
         },
         {
             "name": "Build & Launch (GDB)",
