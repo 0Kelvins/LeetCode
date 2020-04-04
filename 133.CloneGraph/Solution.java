@@ -9,20 +9,26 @@ class Solution {
     public Node cloneGraph(Node node) {
         if (node == null)
             return null;
-        Map<Integer, Node> visited = new HashMap<>();
+        Map<Integer, Node> map = new HashMap<>();
         Node newNode = new Node(node.val);
-        visited.put(newNode.val, newNode);
+        map.put(newNode.val, newNode);
         Queue<Node> q = new LinkedList<>();
         q.offer(node);
+        boolean[] visited = new boolean[101];
+        visited[node.val] = true;
         while (!q.isEmpty()) {
             Node t = q.poll();
-            for (Node k : t.neighbors) {
-                if (!visited.containsKey(k.val)) {
+            for (int i = 0; i < t.neighbors.size(); i++) {
+                Node k = t.neighbors.get(i);
+                if (!map.containsKey(k.val)) {
                     Node n = new Node(k.val);
-                    q.offer(k);
-                    visited.put(n.val, n);
+                    map.put(n.val, n);
                 }
-                visited.get(t.val).neighbors.add(visited.get(k.val));
+                if (!visited[k.val]) {
+                    q.offer(k);
+                    visited[k.val] = true;
+                }
+                map.get(t.val).neighbors.add(map.get(k.val));
             }
         }
         return newNode;
