@@ -16,7 +16,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
-            "miDebuggerPath": "D:/ProgramData/Mingw64/bin/gdb.exe",
+            "miDebuggerPath": "D:/Programs/TDM-GCC/bin/gdb.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
