@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * 199. Binary Tree Right Side View
  * Medium
- * 层次遍历，注意记录层非空节点数量即可
+ * 二叉树性质和层次遍历，注意记录层非空节点数量即可
  */
 public class Solution {
     public List<Integer> rightSideView(TreeNode root) {
