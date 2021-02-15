@@ -25,7 +25,8 @@ public class Solution {
     }
     
     public static void main(String[] args) {
-        int[][] inputs = { { 5, 7 }, { 0, 1 }, {0, 0}, {2, 16}, {2, 3}, {3, 7}, {2, 17}, {13,15},{200, 255} };
+        int[][] inputs = { { 5, 7 }, { 0, 1 }, { 0, 0 }, { 2, 16 }, { 2, 3 }, { 3, 7 }, { 2, 17 }, { 13, 15 },
+                { 200, 255 } };
         Solution s = new Solution();
         for (int[] range : inputs) {
             System.out.println(s.rangeBitwiseAnd(range[0], range[1]));
