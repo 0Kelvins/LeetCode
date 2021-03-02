@@ -9,6 +9,8 @@ cd XXX # 进入题目目录
 javac -encoding UTF-8 XXX.java # 编译代码
 
 java Solution # 运行编译后文件
+
+javac -encoding UTF-8 Solution.java && java Solution
 ```
 
 ```shell
