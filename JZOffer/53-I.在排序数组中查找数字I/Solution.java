@@ -1,5 +1,7 @@
 /**
  * 53 - I. 在排序数组中查找数字 I
+ * Easy
+ * 和34题类似，不过还是写了下，记住有序的数组都要想用二分
  */
 public class Solution {
     public int search(int[] nums, int target) {
