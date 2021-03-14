@@ -1,7 +1,7 @@
 /**
  * 57. 和为s的两个数字
  * Easy
- * 双指针，想双向二分查找来着，后来感觉又没必要。
+ * 双指针，想双向二分查找来着，后来感觉又没必要。后面一题想到求和公式再用双指针就行了
  */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
