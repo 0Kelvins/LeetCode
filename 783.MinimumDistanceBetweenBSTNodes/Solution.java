@@ -12,7 +12,7 @@ public class Solution {
         int min = Integer.MAX_VALUE;
         Deque<TreeNode> stack = new LinkedList<>();
         TreeNode t = root;
-        int pre = -1000000000;
+        int pre = -1;
         while (!stack.isEmpty() || t != null) {
             while (t != null) {
                 stack.push(t);
@@ -20,7 +20,8 @@ public class Solution {
             }
             if (!stack.isEmpty()) {
                 t = stack.pop();
-                min = Math.min(Math.abs(t.val - pre), min);
+                if (pre != -1)
+                    min = Math.min(Math.abs(t.val - pre), min);
                 pre = t.val;
                 t = t.right;
             }
