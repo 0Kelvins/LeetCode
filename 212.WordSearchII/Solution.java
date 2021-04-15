@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * 212. Word Search II
  * Hard
- * 字典树，注意的是结尾标记的位置
+ * 字典树，注意的是结尾标记的位置，查找过的单词可以剪枝
  */
 public class Solution {
 
@@ -22,6 +22,9 @@ public class Solution {
             find(res, board, next, i - 1, j);
             find(res, board, next, i, j - 1);
             board[i][j] = t;
+            if (next.child.isEmpty()) { // 没有其他词时剪枝
+                p.child.remove(t);
+            }
         }
     }
 
