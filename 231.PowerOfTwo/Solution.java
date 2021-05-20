@@ -20,4 +20,11 @@ public class Solution {
         }
         return false;
     }
+
+    // x & (-x)可以得到最右侧为1的位
+    public boolean isPowerOfTwo2(int n) {
+        if (n == 0) return false;
+        long x = (long) n;
+        return (x & (-x)) == x;
+    }
 }
