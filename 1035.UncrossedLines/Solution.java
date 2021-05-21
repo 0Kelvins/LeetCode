@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * 1035. Uncrossed Lines
  * Medium
