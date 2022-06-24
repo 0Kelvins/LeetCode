@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "LeetCode_9fe07c66"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Java",
             "request": "launch",
             "cwd": "${fileDirname}",

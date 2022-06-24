@@ -3,7 +3,7 @@
  * Medium
  * 单调栈
  */
-public class Solutioin {
+public class Solution {
 
     public String removeDuplicateLetters(String s) {
         boolean[] has = new boolean[26];
@@ -33,7 +33,7 @@ public class Solutioin {
     }
 
     public static void main(String[] args) {
-        Solutioin sol = new Solutioin();
+        Solution sol = new Solution();
         String[] strs = { "bcabc", "cbacdcbc" };
         for (String s : strs) {
             System.out.println(sol.removeDuplicateLetters(s));
